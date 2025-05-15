@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kira Formu</title>
+</head>
+<body>
+  <header class="header-block">
+      <div class="menu-toggle" onclick="this.classList.toggle('open')">
+          <span class="bar bar1"></span>
+          <span class="bar bar2"></span>
+          <span class="bar bar3"></span>
+      </div>
+      <div class="logo-item">
+          <img src="/img/remax-logo.png" alt="">
+      </div>
+      <div></div>
+  </header>
+  <div class="left-menu">
+      <img class="left-bg" src="/img/left-menu-bg.png" alt="">
+      <div class="img-item">
+          <img src="/img/left-menu-logo.png" alt="">
+      </div>
+      <span>Neler Yapıyoruz ?</span>
+      <ul>
+          <li><a href="satis_sureci.html">Satış süreci</a> </li>
+          <li><a href="index.html">Kiralama süreci</a></li>
+          <li><a href="remax_analiz.html">Değer analizi</a> </li>
+      </ul>
+
+      <span>Talep Formları</span>
+      <ul>
+          <li><a href="satis_form.html">Satmak istiyorum</a></li>
+          <li><a href="kira_form.html">Kiraya vermek istiyorum</a></li>
+          <li><a href="deger_tespiti_form.html">Değer analizi istiyorum</a></li>
+      </ul>
+
+      <span>Hakkımızda</span>
+      <ul>
+          <li><a href="remax_time.html"> Remax Time</a> </li>
+          <li><a href="bize_yazin.html">İletişim</a> </li>
+          <li>
+              <a href="">
+                  <img src="/img/instagram.png" alt="">
+              </a>
+              <a href="">
+                  <img src="/img/youtube.png" alt="">
+              </a>
+              <a href="">
+                  <img src="/img/in.png" alt="">
+              </a>
+              <a href="">
+                  <img src="/img/x.png" alt="">
+              </a>
+              <a href="">
+                  <img src="/img/facebook.png" alt="">
+              </a>
+          </li>
+      </ul>
+  </div>
+    <div class="main-root process">
+
+        <div class="form-block">
+            <div class="img-item">
+                <img src="/img/kiralandi.png" alt="">
+            </div>
+            <span>
+                “İyi bir kiracı, <br>
+                iyi bir danışmanla bulunur.”
+            </span>
+          <div class="bottom-text">
+            Size en uygun kiracıyı bulalım, Tüm süreci yönetelim,<br>
+                 Siz tek kuruş ödemeyin !
+              <img src="/img/smiley-1.png" alt="">
+              <img src="/img/smile-2.png" alt="">
+              <img src="/img/check-mini.png" alt="">
+
+          </div>
+
+            <form>
+
+
+                <div class="form-group">
+                    <input type="text" name="adsoyad" placeholder="Ad & Soyad">
+                </div>
+
+                <!-- Telefon -->
+                <div class="form-group">
+
+                    <div class="phone-group">
+                        <select name="alan-kodu">
+                            <option value="+90">+90</option>
+                            <option value="+1">+1</option>
+                            <option value="+49">+49</option>
+                            <!-- Diğer kodlar eklenebilir -->
+                        </select>
+                        <input type="text" name="telefon" placeholder="5xx xxx xx xx">
+                    </div>
+                </div>
+
+                <!-- KVKK -->
+                <div class="kvkk">
+                    <input type="checkbox" name="kvkk">
+                   <span>KVKK metnini &nbsp; </span> okudum, onaylıyorum.
+                </div>
+
+                <div class="btn-item">
+                    <button type="submit" class="submit-button">Daha Fazla Bilgi Al</button>
+                   <div class="wp-item">
+                       <img src="/img/wp-icon.png" alt="">
+
+                   </div>
+                </div>
+
+                <div class="process-item">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 20C40 16.0444 38.827 12.1776 36.6294 8.8886C34.4318 5.59962 31.3082 3.03617 27.6537 1.52242C23.9992 0.00866568 19.9778 -0.387401 16.0982 0.384303C12.2186 1.15601 8.65492 3.06082 5.85788 5.85787C3.06083 8.65492 1.15601 12.2186 0.384304 16.0982C-0.387402 19.9778 0.00866699 23.9992 1.52242 27.6537C3.03617 31.3082 5.59962 34.4318 8.88861 36.6294C12.1776 38.827 16.0444 40 20 40C25.3025 39.9942 30.3862 37.8852 34.1357 34.1357C37.8852 30.3862 39.9942 25.3025 40 20ZM18.822 26.178L10.489 17.845C10.1765 17.5324 10.0009 17.1085 10.0009 16.6665C10.0009 16.2245 10.1765 15.8006 10.489 15.488C10.8016 15.1754 11.2255 14.9999 11.6675 14.9999C12.1095 14.9999 12.5335 15.1754 12.846 15.488L20 22.643L27.155 15.488C27.3098 15.3332 27.4935 15.2105 27.6957 15.1267C27.8979 15.043 28.1146 14.9999 28.3335 14.9999C28.5524 14.9999 28.7691 15.043 28.9713 15.1267C29.1735 15.2105 29.3572 15.3332 29.512 15.488C29.6668 15.6428 29.7895 15.8265 29.8733 16.0287C29.957 16.2309 30.0002 16.4476 30.0002 16.6665C30.0002 16.8854 29.957 17.1021 29.8733 17.3043C29.7895 17.5065 29.6668 17.6902 29.512 17.845L21.179 26.178C21.0244 26.333 20.8407 26.4559 20.6384 26.5398C20.4362 26.6237 20.2194 26.6668 20.0005 26.6668C19.7816 26.6668 19.5648 26.6237 19.3626 26.5398C19.1604 26.4559 18.9767 26.333 18.822 26.178Z" fill="#363537"/>
+                    </svg>
+                    Sürecin nasıl işlediğini görün.
+                </div>
+
+            </form>
+
+        </div>
+
+
+
+    </div>
+  <footer>
+      <div class="footer-root">
+          <img class="footer-bg" src="/img/footer-bg.png" alt="">
+          <div class="footer-container">
+              <div class="img-item">
+                  <img src="/img/footer-logo.png" alt="">
+              </div>
+              <div class="footer-block">
+                  <div class="footer-item">
+                      <span>Neler Yapıyoruz ?</span>
+                      <ul>
+                          <li><a href="satis_sureci.html">Satış süreci</a> </li>
+                          <li><a href="index.html">Kiralama süreci</a></li>
+                          <li><a href="remax_analiz.html">Değer analizi</a>  </li>
+                      </ul>
+                  </div>
+                  <div class="footer-item">
+                      <span>Talep Formları</span>
+                      <ul>
+                          <li><a href="satis_form.html">Satmak istiyorum</a></li>
+                          <li><a href="kira_form.html">Kiraya vermek istiyorum</a></li>
+                          <li><a href="deger_tespiti_form.html">Değer analizi istiyorum</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-item">
+                      <span>Politikalar</span>
+                      <ul>
+                          <li><a href="kullanim_kosullari.html"> Kullanım Koşulları</a></li>
+                          <li><a href="gizlilik_politikasi.html">Gizlilik Politikası</a> </li>
+                          <li><a href="cerez_politikasi.html">Çerez Politikası</a> </li>
+                          <li><a href="kvkk.html">KVKK</a>  </li>
+                      </ul>
+                  </div>
+                  <div class="footer-item">
+                      <span>Hakkımızda</span>
+                      <ul>
+                          <li><a href="remax_time.html"> Remax Time</a> </li>
+                          <li><a href="bize_yazin.html">İletişim</a> </li>
+                          <li>
+                              <a href="">
+                                  <img src="/img/instagram.png" alt="">
+                              </a>
+                              <a href="">
+                                  <img src="/img/youtube.png" alt="">
+                              </a>
+                              <a href="">
+                                  <img src="/img/in.png" alt="">
+                              </a>
+                              <a href="">
+                                  <img src="/img/x.png" alt="">
+                              </a>
+                              <a href="">
+                                  <img src="/img/facebook.png" alt="">
+                              </a>
+                          </li>
+                      </ul>
+                  </div>
+
+              </div>
+              <div class="copyright">
+                  2025 Nisan - Remax Time . Tüm hakları saklıdır.
+              </div>
+          </div>
+
+      </div>
+  </footer>
+
+
+  <script>
+      document.querySelector("form").addEventListener("submit", function(e) {
+          e.preventDefault(); // Sayfa yenilenmesini önler
+
+          const adSoyad = document.querySelector('input[name="adsoyad"]').value.trim();
+          const telefon = document.querySelector('input[name="telefon"]').value.trim();
+          const kvkkChecked = document.querySelector('input[name="kvkk"]').checked;
+
+          // Hata mesajı varsa sil
+          const existingError = document.querySelector(".error-message");
+          if (existingError) {
+              existingError.remove();
+          }
+
+          if (adSoyad && telefon && kvkkChecked) {
+              const mainRoot = document.querySelector(".main-root");
+              mainRoot.classList.add("success");
+
+              const formBlock = document.querySelector(".form-block");
+              formBlock.innerHTML = `
+            <div class="success-block">
+                <div class="img-item">
+                    <img src="/img/check.png" alt="">
+                </div>
+                <h2>Teşekkürler</h2>
+                <p>
+                    Talebiniz bize ulaştı. <br>
+                    En kısa sürede sizinle iletişime geçip, süreci birlikte planlayacağız.
+                    <br>
+                    Görüşmek üzere!
+                </p>
+                <div class="img-item">
+                    <img src="/img/remax-logo.png" alt="">
+                </div>
+            </div>
+        `;
+          } else {
+              const errorMessage = document.createElement("div");
+              errorMessage.className = "error-message";
+              errorMessage.style.color = "red";
+              errorMessage.style.marginTop = "10px";
+              errorMessage.textContent = "Lütfen tüm alanları eksiksiz doldurun ve KVKK onay kutusunu işaretleyin.";
+              document.querySelector("form").appendChild(errorMessage);
+          }
+      });
+  </script>
+
+  <script>
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const leftMenu = document.querySelector('.left-menu');
+      const body = document.body;
+
+      function getScrollbarWidth() {
+          return window.innerWidth - document.documentElement.clientWidth;
+      }
+
+      toggleBtn.addEventListener('click', function () {
+          const menuOpen = leftMenu.classList.toggle('active');
+
+          if (menuOpen) {
+              const scrollbarWidth = getScrollbarWidth();
+              body.classList.add('no-scroll');
+              body.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+          } else {
+              body.classList.remove('no-scroll');
+              body.style.removeProperty('--scrollbar-width');
+          }
+      });
+  </script>
+
+</body>
+</html>

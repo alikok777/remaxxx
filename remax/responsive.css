@@ -1,0 +1,122 @@
+@media (max-width: 1400px){
+    .footer-root{
+        padding: 0 20px;
+    }
+    .main-root{
+        padding: 0 20px;
+
+    }
+}
+
+@media (max-width: 960px){
+    .main-root{
+        .text-block{
+            .text-item{
+                ul{
+                    li{
+                        font-size: 18px;
+                    }
+                }
+            }
+            .number{
+                &.last{
+                    display: none;
+                }
+                font-size: 100px;
+                margin: 0 10px 0 0;
+            }
+        }
+        .form-block{
+            label{
+                font-size: 18px;
+            }
+            .img-item{
+                img{
+                    width: auto;
+                }
+
+            }
+        }
+        .img-item{
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .footer-root{
+        .footer-container{
+            .img-item{
+                img{
+                    width: 100%;
+                    max-width: 357px;
+                }
+            }
+        }
+
+      .footer-block{
+          flex-wrap: wrap;
+          .footer-item{
+              margin: 0 0 20px;
+          }
+      }
+    }
+}
+
+@media (max-width: 768px){
+    .form-block{
+        span{
+            font-size: 24px;
+        }
+        .bottom-text{
+            font-size: 18px;
+        }
+    }
+
+    .footer-root{
+        height: 100%;
+        padding: 0 30px;
+        .footer-container{
+            .footer-block{
+                flex-direction: column;
+            }
+        }
+    }
+    .left-menu{
+        width: 100%;
+    }
+    .main-root{
+        .text-block{
+            .text-item{
+                h2{
+                    font-size: 30px;
+                }
+                ul{
+                    padding: 0;
+                }
+            }
+        }
+        .top-block{
+            margin: 0 0 10px;
+            h1{
+                font-size: 30px !important;
+            }
+            p{
+                font-size: 18px;
+                margin: 10px 0 20px;
+            }
+        }
+        h1{
+            font-size: 34px !important;
+        }
+        .top-block{
+
+            .middle-info{
+                font-size: 22px;
+            }
+        }
+
+        &.process{
+            padding: 30px 20px 0;
+        }
+    }
+}
